@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DestinoGlam</title>
+    <link rel="shortcut icon" href="img/viajar.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+   
 </head>
 <body>
     <!--Header-->
@@ -21,14 +23,160 @@
                 <!--icono de cierre-->
                 <i class="ri-close-circle-line cerrar-menu-hamburguesa"></i>
                 <a href="#home" class="enlace">Home</a>
+                <a href="#nosotros" class="enlace">Nosotros</a>
                 <a href="#destinos" class="enlace">Destinos</a>
-                <a href="#blog" class="enlace">Blog</a>
                 <a href="#contacto" class="enlace">Contacto</a>
             </div>
             <!--Icono menu hamburguesa-->
             <i class="ri-menu-3-line menu hamburguesa"></i>
         </nav>
     </header>
+     <!--main-->
+    <main>
+        <!--seccion home-->
+        <section class="home" id="home">
+            <div class="contenedor">
+                <h1 class="titulo-home">
+                  Destino Glam
+                </h1>
+                <p class="parrafo-home">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, minus. Magnam blanditiis quo natus quis.
+                </p>
+            </div>
+        </section>
+
+        <!--seccion nosotros-->
+
+        <section class="nosotros" id="nosotros">
+            <div class="contenedor">
+                <h2 class="titulo-section">Quienes Somos?</h2>
+                <div class="fila">
+                    <div>
+                        <img src="img/nosotros.png" alt="imagen">
+                    </div>
+                    <div>
+                        <p class="parrafo-nosotros">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi maxime reiciendis ullam sint dolorum, voluptates vero dolorem rerum cupiditate. Nam illum, iusto laudantium excepturi dolores nulla iure laborum harum.
+                        </p>
+                        <br>
+                        <p class="parrafo-nosotros">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto nisi corporis impedit. Aliquam nihil commodi doloribus. Aperiam ea excepturi neque alias nisi maxime vero saepe! Eaque deleniti tempora odit ullam.
+                        </p>
+                        <a href="#destinos" class="boton-ver-destinos">DESTINOS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--seccion destinos-->
+
+        <section class="destinos" id="destinos">
+            <div class="contenedor">
+                <h2 class="titulo-section">Destinos</h2>
+
+                <div class="contenedor-destinos">
+                    <div class="contenedor-destino">
+                        <h3 class="titulo-destino"> New York</h3>
+                        <a href="">
+                            <img src="./img/New_york_times_square-terabass.jpg" alt="">
+                        </a>
+                        <a href="" class="boton-destino">Mas Información</a>
+                    </div>
+
+                    <div class="contenedor-destino">
+                        <h3 class="titulo-destino">Quintana Roo</h3>
+                        <a href="">
+                            <img src="./img/quintana-roo.jpg" alt="">
+                        </a>
+                        <a href="" class="boton-destino">Mas Información</a>
+                    </div>
+
+                    <div class="contenedor-destino">
+                        <h3 class="titulo-destino">Abu Dhabi</h3>
+                        <a href="">
+                            <img src="./img/abu-dhabi-city.jpg" alt="">
+                        </a>
+                        <a href="" class="boton-destino">Mas Información</a>
+                    </div>
+
+                    <div class="contenedor-destino">
+                        <h3 class="titulo-destino"> Islas Azores</h3>
+                        <a href="">
+                            <img src="./img/isla-Azores-Portugal-1920-2.jpg" alt="">
+                        </a>
+                        <a href="" class="boton-destino">Mas Información</a>
+                    </div>
+
+                    <div class="contenedor-destino">
+                        <h3 class="titulo-destino">Colombia</h3>
+                        <a href="">
+                            <img src="./img/colombia.jpg" alt="">
+                        </a>
+                        <a href="" class="boton-destino">Mas Información</a>
+                    </div>
+
+                    <div class="contenedor-destino">
+                        <h3 class="titulo-destino">Grecia</h3>
+                        <a href="">
+                            <img src="./img/grecia.jpg" alt="">
+                        </a>
+                        <a href="" class="boton-destino">Mas Información</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- seccion contacto -->
+        <section class="contacto" id="contacto">
+            <div class="contenedor">
+              <h2 class="titulo-section">Contacto</h2>
     
+              <form>
+                <div class="contenedor-input">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" id="nombre" />
+                </div>
+    
+                <div class="contenedor-input">
+                  <label for="apellido">Apellido</label>
+                  <input type="text" id="apellido" />
+                </div>
+    
+                <div class="contenedor-input">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" />
+                </div>
+    
+                <div class="contenedor-input">
+                  <label for="telefono">Telefono</label>
+                  <input type="tel" id="telefono" />
+                </div>
+    
+                <div class="contenedor-input">
+                  <label for="consulta">Consulta o Mensaje</label>
+                  <input type="text" id="consulta" />
+                </div>
+                <input class="boton-enviar" type="submit" value="Enviar" />
+            </form>
+          </div>
+        </section> 
+
+    </main>
+        <!-- seccion footer -->
+        <footer class="footer">
+            <div class="contenedor">
+              <p>
+                2023 | DestinoGlam | TE LLEVAMOS A LA MEJOR EXPERIENCIA DE TU VIDA
+              </p>
+              <div class="redes-sociales">
+                <a href=""><i class="ri-facebook-circle-fill"></i></a>
+                <a href=""><i class="ri-instagram-fill"></i></a>
+                <a href=""><i class="ri-twitter-fill"></i></a>
+              </div>
+            </div>
+          </footer>
+      
+        <script src="./main.js"></script>
+       
 </body>
 </html>

@@ -42,7 +42,7 @@ section {
 
 header {
   padding: 2rem;
-  background-color: rgba(230, 196, 235, 0.73);
+  background-image: radial-gradient( circle at 50% -7.71%, #c5eeff 0, #c8eeff 4.17%, #ccecff 8.33%, #d0ebff 12.5%, #d5eaff 16.67%, #d9e9ff 20.83%, #dee7ff 25%, #e4e6ff 29.17%, #e9e5ff 33.33%, #eee3ff 37.5%, #f2e2ff 41.67%, #f7e1fc 45.83%, #fbe0f9 50%, #ffdff5 54.17%, #ffdef2 58.33%, #ffdeee 62.5%, #ffdeea 66.67%, #ffdde5 70.83%, #ffdee1 75%, #ffdedd 79.17%, #ffdeda 83.33%, #ffdfd6 87.5%, #ffe0d3 91.67% );
 }
 
 nav {
@@ -52,19 +52,27 @@ nav {
   
 }
 
+
 .titulo-logo {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
 }
 
 .contenedor-enlaces { 
   display: flex;
   gap: 2rem;
   font-size: 1.1rem;
+  color: rgb(0, 0, 0);
   
+}
+
+.enlace:hover{
+  color: #ca537a;
 }
 
 .menu-hamburguesa { 
   display: none;
+  color: rgb(11, 8, 8);
 }
 
 .cerrar-menu-hamburguesa {
@@ -162,6 +170,7 @@ nav {
 
 .contacto {
   background-color: rgb(239, 243, 246);
+ 
   }
   
 form {
@@ -174,6 +183,7 @@ form {
   
 label {
   display: block;
+  
   }
   
 input {
@@ -185,6 +195,7 @@ input {
   background-color: rgb(255, 255, 255);
   transition: 0.3s;
   color: rgb(211, 168, 217);
+  border-radius: 10px;
   }
   
 input:focus {
@@ -198,6 +209,9 @@ input:focus {
   background-color: rgb(15, 2, 34);
   color: rgb(250, 250, 250);
   cursor: pointer;
+  height: 40%;
+  width: 40%;
+  align-self: center;
   }
 
 .boton-enviar:hover{
@@ -210,7 +224,7 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url("./img/ny.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url("./img/ny/papirne-foto-tapete.jpg");
   background-size: cover;
   background-position: center;
   min-height: 80vh;
@@ -351,44 +365,96 @@ input:focus {
   color: #3c5b87;
   margin: 0;
 }
+.mas-informacion {
+  background: #FAF8F2;
+}
 
-.informacion-general {
+.mas-informacion .contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.mas-informacion .contenedor img {
   width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(40, 0, 0, 0.6), rgba(40, 0, 0, 0.6)), url(./img/fondony.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
 }
 
-.info {
-  width: 155%;
-  padding: 40px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.info h1 {
-  font-size: 7vmin;
+.mas-informacion h1 {
   font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 2.3rem; 
+  color: #2d476c;
 }
 
-.info p {
-  color: rgb(231, 225, 225);
-  margin: 5px 0;
-  font-family: Verdana;
+.article-card-secciones {
+  background: white;
+  border-radius: 20px;
+  transition: all 0.3s;
 }
 
+.article-card-secciones:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+  cursor: pointer;
+  }
 
-  /*footer*/
+
+.lugares {
+  background: #f5f0df;
+}
+
+.comidas {
+  background: #FAF8F2;
+}
+
+.vida-nocturna{
+  background: #f5f0df;
+}
+
+/* footer paginas-destinos */
+
+
+.productos-relacionados {
+  background: #FAF8F2;
+}
+
+.productos-relacionados .galeria {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.productos-relacionados .galeria img {
+  width: 100%;
+  height: 100%;
+}
+
+.productos-relacionados img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+  cursor: pointer;
+}
+
+.boton-volver {
+  display: inline-block;
+  margin-top: 2rem;
+  transition: 0.2s;
+}
+
+.boton-volver:hover {
+  color: rgb(166, 105, 179);
+}
+
+.flecha-volver {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+  /*footer general */
 .footer {
-  color: rgb(239, 243, 246);
+  color: rgb(0, 0, 0);
   padding: 2rem;
-  background-color: rgb(15, 2, 34); 
+  background-image: radial-gradient( circle at 50% -7.71%, #c5eeff 0, #c8eeff 4.17%, #ccecff 8.33%, #d0ebff 12.5%, #d5eaff 16.67%, #d9e9ff 20.83%, #dee7ff 25%, #e4e6ff 29.17%, #e9e5ff 33.33%, #eee3ff 37.5%, #f2e2ff 41.67%, #f7e1fc 45.83%, #fbe0f9 50%, #ffdff5 54.17%, #ffdef2 58.33%, #ffdeee 62.5%, #ffdeea 66.67%, #ffdde5 70.83%, #ffdee1 75%, #ffdedd 79.17%, #ffdeda 83.33%, #ffdfd6 87.5%, #ffe0d3 91.67% );
   }
   
 .redes-sociales {

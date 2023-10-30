@@ -50,7 +50,10 @@
 
         <section class="nosotros" id="nosotros">
             <div class="contenedor">
-                <h2 class="titulo-section">Quienes Somos?</h2>
+                <div class="titulo1">
+                    <h1>Quienes somos?</h1>
+                    <div class="line"></div>
+                </div>
                 <div class="fila">
                     <div>
                         <img src="img/nosotros.png" alt="imagen">
@@ -73,7 +76,10 @@
 
         <section class="destinos" id="destinos">
             <div class="contenedor">
-                <h2 class="titulo-section">Destinos</h2>
+                <div class="titulo1">
+                    <h1>Destinos</h1>
+                    <div class="line"></div>
+                </div>
 
                 <div class="contenedor-destinos">
                     <div class="contenedor-destino">
@@ -101,11 +107,11 @@
                     </div>
 
                     <div class="contenedor-destino">
-                        <h3 class="titulo-destino"> Islas Azores</h3>
-                        <a href="./Destinos/islas-azores.html">
-                            <img src="./img/isla-Azores-Portugal-1920-2.jpg" alt="">
+                        <h3 class="titulo-destino"> Miami</h3>
+                        <a href="./Destinos/miami.html">
+                            <img src="./img/miami.jpg" alt="">
                         </a>
-                        <a href="./Destinos/islas-azores.html" class="boton-destino">Mas Información</a>
+                        <a href="./Destinos/miami.html" class="boton-destino">Mas Información</a>
                     </div>
 
                     <div class="contenedor-destino">
@@ -128,38 +134,49 @@
         </section>
 
         <!-- seccion contacto -->
-        <section class="contacto" id="contacto">
-            <div class="contenedor">
-              <h2 class="titulo-section">Contacto</h2>
-    
+        <section class="form-contacto" id="contacto">
+                <div class="titulo2">
+                    <h1>Contactanos</h1>
+                    <div class="line"></div>
+                </div>
               <form>
-                <div class="contenedor-input">
-                  <label for="nombre">Nombre</label>
-                  <input type="text" id="nombre" required/>
+                <div class="nombre-apellido">
+                    <div class="input-group">
+                        <input type="text" name="name" id="name" required>
+                        <label for="name">
+                            <i class="ri-user-fill" aria-hidden="true"></i>
+                            Ingrese su nombre
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="apellido" id="apellido" required>
+                        <label for="apellido">
+                            <i class="ri-user-fill"></i>
+                            Ingrese su apellido
+                        </label>
+                    </div>
                 </div>
-    
-                <div class="contenedor-input">
-                  <label for="apellido">Apellido</label>
-                  <input type="text" id="apellido" required />
-                </div>
-    
-                <div class="contenedor-input">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" required />
-                </div>
-    
-                <div class="contenedor-input">
-                  <label for="telefono">Telefono</label>
-                  <input type="tel" id="telefono" required />
-                </div>
-    
-                <div class="contenedor-input">
-                  <label for="consulta">Consulta o Mensaje</label>
-                  <input type="text" id="consulta" required />
-                </div>
-                <input class="boton-enviar" type="submit" value="Enviar" />
+                <div class="input-group">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">
+                        <i class="ri-mail-fill"></i>
+                        Ingrese su email
+                    </label>
+               </div>
+               <div class="input-group">
+                <textarea name="texto" id="mensaje" rows="8" required></textarea>
+                <label for="mensaje">
+                    <i class="ri-question-answer-fill"></i>
+                    Ingrese su mensaje
+                </label> 
+               </div>
+
+               <button type="submit" class="boton-destino">
+                Enviar
+                <i class="ri-send-plane-fill"></i>
+               </button>
             </form>
-          </div>
+        
         </section> 
 
     </main>
